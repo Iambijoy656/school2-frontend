@@ -1,0 +1,38 @@
+[
+  {
+    "_id": 1,
+    "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_hero-banners/ib-homepage.jpg?h=980&w=1335&hash=9CF960E1EB63DF2FF040DF93B237810A",
+    "title": "International Baccalaureate",
+    "text": "We take great pride in promoting academic excellence as well as individual betterment and endeavour"
+  },
+  {
+    "_id": 2,
+    "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_hero-banners/lower-school-homepage.jpg?h=980&w=1335&hash=DF7ACB9A1E5781649E3996A5E6B5692A",
+    "title": "Lower School",
+    "text": "Through a rich, diverse and exciting curriculum offer, with access to subject specialists, our students develop into well rounded, confident learners pursuing ‘excellence’ in all that they do."
+  },
+  {
+    "_id": 3,
+    "title": "Middle School",
+    "image": "As our students move into the Middle School, they have further exposure to our subject specialists in every area of their learning.",
+    "text": "Celebrating the various awards and success at WIS"
+  },
+  {
+    "_id": 4,
+    "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_hero-banners/upper-school-homepage.jpg?h=980&w=1335&hash=0E7C36F66F4811295D60F3F43420517F",
+    "title": "Upper School",
+    "text": "Upper School promotes an incredibly strong sense of independence, where students take pride in their achievements."
+  },
+  {
+    "_id": 5,
+    "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-thumbnails/general-photos-490-x400/misc-2.png?h=400&w=490&hash=1DF4129E5904351D75A4CB4B0C23C829",
+    "title": "Why GEMS",
+    "text": "There’s much more to a GEMS education than just great schools that set a benchmark for quality education"
+  },
+  {
+    "_id": 6,
+    "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-thumbnails/for-parents-tn.jpg?h=400&w=490&hash=938B33EB9F2F41BB53FFEA3DB418A0C2",
+    "title": "Parent Testimonials",
+    "text": "Find out why our parents love WIS"
+  }
+]

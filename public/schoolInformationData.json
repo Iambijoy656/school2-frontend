@@ -1,0 +1,38 @@
+[
+  {
+    "_id": 1,
+    "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-thumbnails/hpl-tn.jpg?h=400&w=490&hash=201739059DC93D3CCA08A553F440EBF7",
+    "title": "High Performance Learning",
+    "text": "A research-based, pedagogy-led philosophy"
+  },
+  {
+    "_id": 2,
+    "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/misc/uni-destinations-thumb.jpg?h=400&w=490&hash=016FC76FC74A30EC23E23EA1F62221F8",
+    "title": "University Destinations",
+    "text": "GEMS students are accepted by some of the world's most prestigious universities"
+  },
+  {
+    "_id": 3,
+    "title": "School Awards",
+    "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-thumbnails/academic-performance-tn.jpg?h=400&w=490&hash=5CC0588FA79ED2A4BC371408CABC1B1A",
+    "text": "Celebrating the various awards and success at WIS"
+  },
+  {
+    "_id": 4,
+    "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-thumbnails/general-photos-490-x400/school-1.png?h=400&w=490&hash=F492DACA425A00A7C1500E6BC497D854",
+    "title": "Outstanding Since 2009",
+    "text": "GEMS Wellington International School is Rated Outstanding by DSIB Since 2009"
+  },
+  {
+    "_id": 5,
+    "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-thumbnails/general-photos-490-x400/misc-2.png?h=400&w=490&hash=1DF4129E5904351D75A4CB4B0C23C829",
+    "title": "Why GEMS",
+    "text": "There’s much more to a GEMS education than just great schools that set a benchmark for quality education"
+  },
+  {
+    "_id": 6,
+    "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-thumbnails/for-parents-tn.jpg?h=400&w=490&hash=938B33EB9F2F41BB53FFEA3DB418A0C2",
+    "title": "Parent Testimonials",
+    "text": "Find out why our parents love WIS"
+  }
+]

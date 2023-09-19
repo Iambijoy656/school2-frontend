@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Outstanding IBDP Results",
+    "subtitle": "Congratulations to WIS students for their outstanding IB results. These results place WIS as one of the top performing IB schools in the UAE.",
+    "scores": [
+      {
+        "_id": 1,
+        "AvarageNumber": 33,
+        "text": "Of students achieved 40 points or higher"
+      },
+      {
+        "_id": 2,
+        "AvarageNumber": 40,
+        "text": "Points achieved by five students , putting them in the top 0.1% worldwide"
+      },
+      {
+        "_id": 3,
+        "AvarageNumber": 35,
+        "text": "Points achieved by five students , putting them in the top 0.1% worldwide"
+      },
+      {
+        "_id": 4,
+        "AvarageNumber": 44,
+        "text": "Points achieved by five students , putting them in the top 0.1% worldwide"
+      },
+      {
+        "_id": 5,
+        "AvarageNumber": 46,
+        "text": "Of students achieved 40 points or higher"
+      },
+      {
+        "_id": 6,
+        "AvarageNumber": 53,
+        "text": "Points achieved by five students , putting them in the top 0.1% worldwide"
+      }
+    ]
+  }
+]
