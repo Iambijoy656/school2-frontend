@@ -12,15 +12,15 @@ const Banner = () => {
     },
   });
 
-    if (isLoading && !bannerData.length) return <Loading />;
-//   if (isLoading && !bannerData.length) return <p>Loading....</p>;
+  if (isLoading && !bannerData.length) return <Loading />;
+  //   if (isLoading && !bannerData.length) return <p>Loading....</p>;
 
-//   console.log(bannerData[0]);
+  //   console.log(bannerData[0]);
   return (
     <div>
       <div className="relative flex items-center overflow-ellipsis">
         <video
-          className="w-full h-1/3 cover"
+          className="w-full cover"
           src={bannerData[0].bannerVedio}
           muted
           autoPlay={"autoplay"}
