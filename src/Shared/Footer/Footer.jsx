@@ -12,7 +12,7 @@ const Footer = () => {
         },
       });
     
-      console.log(footerData[0]);
+    
     
       if (isLoading && !footerData.length) return <Loading />;
   return (
