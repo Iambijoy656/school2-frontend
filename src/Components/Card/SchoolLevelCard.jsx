@@ -1,32 +1,32 @@
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
-const SchoolLevelCard = () => {
+const SchoolLevelCard = ({ information }) => {
+  // console.log(information);
+
   return (
-    <div className="relative ">
-      <div className="relative ">
+    <div className="relative">
+      <div className="relative">
         {/* Background color with opacity */}
-        <div className="bg-[#8c1d5899] absolute inset-0 w-full h-full">
-          <div className="flex justify-center items-center h-full">
-            <div className="text-white px-10">
-              <h2 className={` text-2xl font-bold `}>{"information.title"}</h2>
-              <div className={` text-center`}>
-                <PrimaryButton
-                  btnText={"DISCOVER MORE"}
-                  borderColor={"#ffffff"}
-                  bgColor={"#2c3154"}
-                  iconColor={"#005e9a"}
-                  textColor={"#ffffff"}
-                />
-              </div>
-              <p className={` text-xs px-5 `}>{"information.text"}</p>
-            </div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50">
+          <div className="flex flex-col justify-center items-start mt-10 text-white absolute top-1/2 left-[30%] transform -translate-y-1/2 w-full">
+            <h2 className="text-4xl font-bold mb-10">{information.title}</h2>
+            <p className=" w-1/2  my-5 text-sm">
+            {information.text}
+            </p>
+            <PrimaryButton
+              btnText="LEARN MORE"
+              borderColor="#ffffff"
+              bgColor=""
+              iconColor="#fff"
+              textColor="#ffffff"
+            />
           </div>
         </div>
 
         <img
-          src={"information.image"}
-          alt={"information.image"}
-          className="  w-[550px] h-[350px]"
+          src={information.image}
+          alt={information.image}
+          className="w-full h-[600px]"
         />
       </div>
     </div>

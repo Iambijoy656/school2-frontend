@@ -1,0 +1,31 @@
+[
+  {
+    "sectionTitle":"Our School Stories",
+    "allstories":[
+      {
+        "_id": 1,
+        "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-thumbnails/academic-performance-tn.jpg?h=400&w=490&hash=5CC0588FA79ED2A4BC371408CABC1B1A",
+        "title": "‘Danny’s Mystery Unlocked’ by Arnav ",
+        "description": "Arnav in Year 5 is a author who published his first book called 'book ‘Danny’s Mystery Unlocked’ which can be found on Amazon India . Arnav also speaks to his fellow peers about bullying and gives his tips on writing a book. "
+      },
+      {
+        "_id": 2,
+        "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/be-amazing-at-wis/21-01-19-dominic-morton-pro-am-2.jpg?h=700.667&w=461.333&hash=99506D9B2FF911D21CED2CCDBD5B127D",
+        "title": "At the ‘Fore’ Front of Golfing Excellence",
+        "description": "Dominic Morton, Year 10 student, is excelling in golf after years of practice and determination. He was recently given the opportunity to play in the Pro-Am, professional golf event, at Jumeirah Golf Estates and played really well. "
+      },
+      {
+        "_id": 3,
+        "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-thumbnails/academic-performance-tn.jpg?h=400&w=490&hash=5CC0588FA79ED2A4BC371408CABC1B1A",
+        "title": "John Haffar - Sport Scholar",
+        "description": "John Haffar is another one of our Sport Scholars. His main sport is basketball, but he is also a sporting enthusiast and takes part in many other sporting activities. "
+      },
+      {
+        "_id": 4,
+        "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-thumbnails/academic-performance-tn.jpg?h=400&w=490&hash=5CC0588FA79ED2A4BC371408CABC1B1A",
+        "title": "‘Danny’s Mystery Unlocked’ by Arnav ",
+        "description": "Arnav in Year 5 is a author who published his first book called 'book ‘Danny’s Mystery Unlocked’ which can be found on Amazon India . Arnav also speaks to his fellow peers about bullying and gives his tips on writing a book. "
+      }
+    ]
+  }
+]

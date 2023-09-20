@@ -23,7 +23,7 @@ function Navbar() {
       <span className="text-gray-300">|</span>
       <li className="font-bold text-md tracking-wide ">
         <a href="#" className="text-[#005e9a]">
-          Why WIS?
+          Academics
         </a>
       </li>
       <span className="text-gray-300">|</span>
@@ -35,19 +35,19 @@ function Navbar() {
       <span className="text-gray-300">|</span>
       <li className="font-bold text-md tracking-wide ">
         <a href="#" className="text-[#005e9a]">
-          Curriculum
+          Achivements
         </a>
       </li>
       <span className="text-gray-300">|</span>
       <li className="font-bold text-md tracking-wide ">
         <a href="#" className="text-[#005e9a]">
-          Student Life
+          Facilities
         </a>
       </li>
       <span className="text-gray-300">|</span>
       <li className="font-bold text-md tracking-wide ">
         <a href="#" className="text-[#005e9a]">
-          For Parents
+          Contacts
         </a>
       </li>
     </>
@@ -134,7 +134,7 @@ function Navbar() {
               className="block px-4 py-2 text-[#005e9a]"
               onClick={toggleNavbar}
             >
-              Why WIS?
+              Academics
             </a>
           </li>
           <li>
@@ -152,7 +152,7 @@ function Navbar() {
               className="block px-4 py-2 text-[#005e9a]"
               onClick={toggleNavbar}
             >
-              Curriculum
+              Achivements
             </a>
           </li>{" "}
           <li>
@@ -161,7 +161,7 @@ function Navbar() {
               className="block px-4 py-2 text-[#005e9a]"
               onClick={toggleNavbar}
             >
-              Student Life
+              Facilities
             </a>
           </li>{" "}
           <li>
@@ -170,7 +170,7 @@ function Navbar() {
               className="block px-4 py-2 text-[#005e9a]"
               onClick={toggleNavbar}
             >
-              For parents
+              Contacts
             </a>
           </li>
         </ul>

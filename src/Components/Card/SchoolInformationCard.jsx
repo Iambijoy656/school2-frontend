@@ -43,7 +43,7 @@ const SchoolInformationCard = ({ information }) => {
               <p
                 className={` text-xs px-5 ${
                   isShow
-                    ? "block   absolute left-0 top-50 animate__animated animate__fadeInUp animate__fast"
+                    ? "block   absolute left-0 mt-4 top-28 animate__animated animate__fadeInUp animate__fast"
                     : "hidden"
                 }`}
               >
