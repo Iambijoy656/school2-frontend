@@ -2,8 +2,8 @@ import { useQuery } from "@tanstack/react-query";
 import { useRef } from "react";
 import Slider from "react-slick";
 import Loading from "../../../Shared/Loading/Loading";
-import ResultsSectionCard from "../../../Components/Card/resultsSectionCard";
 import PrimaryButton from "../../../Components/PrimaryButton/PrimaryButton";
+import ResultsSectionCard from "../../../Components/Card/resultsSectionCard";
 
 const ResultsSection = () => {
   const sliderRef = useRef();
