@@ -77,7 +77,7 @@ const Banner = () => {
           <Slider {...settings} ref={sliderRef} className="overflow-hidden">
             {bannerData?.map((information, i) => (
               <div key={i} className="relative group">
-                <div className="w-fit h-[600px]">
+                <div className="w-full h-[600px]">
                   <img
                     className="w-full h-full"
                     src={information.image}
