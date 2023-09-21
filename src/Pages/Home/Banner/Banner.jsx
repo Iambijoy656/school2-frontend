@@ -31,9 +31,10 @@ const Banner = () => {
     fade: true,
     infinite: true,
     autoplay: true,
-    speed: 2000,
+    speed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplaySpeed: 5000,
     beforeChange: handleSlideChange,
     // responsive: [
     //   {
@@ -77,9 +78,13 @@ const Banner = () => {
           <Slider {...settings} ref={sliderRef} className="overflow-hidden">
             {bannerData?.map((information, i) => (
               <div key={i} className="relative group">
-                <div className="w-full h-[630px]  ">
+                <div className="w-full h-[630px]">
                   <img
-                    className="w-full h-full"
+                    className={`${
+                      animation &&
+                      "transition  duration-[6000ms] ease-in scale-125"
+                    } w-full h-full`}
+                    // className="w-full h-full "
                     src={information.image}
                     alt=""
                   />
@@ -124,13 +129,13 @@ const Banner = () => {
           <div className="absolute bottom-32 right-24  flex  gap-5 -ml-5">
             <button
               onClick={() => goPrev()}
-              className="  hover:border-red-800 hover:text-primary  p-2   transition ease-in-out delay-150 bg-white border-2 border-gray-500 hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
+              className="  hover:border-red-800 hover:text-primary  p-3   transition ease-in-out delay-150 text-white border-2  border-white hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
             >
               <SlArrowLeft />
             </button>
             <button
               onClick={() => goNext()}
-              className="   hover:border-red-800 p-2 hover:text-primary   transition ease-in-out delay-150 bg-white border-2  border-gray-500 hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
+              className="   hover:border-red-800 p-3 hover:text-primary   transition ease-in-out delay-150 text-white border-2  border-white hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
             >
               <SlArrowRight />
             </button>
