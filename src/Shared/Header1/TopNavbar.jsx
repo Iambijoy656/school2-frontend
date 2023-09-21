@@ -16,7 +16,7 @@ const TopNavbar = () => {
       >
         <div className="">
           <div className=" flex items-center justify-start gap-5 p-2 px-5">
-            <Link to={""} target="_blank" href="https://www.facebook.com">
+            <Link to="" target="_blank" href="https://www.facebook.com">
               <FaFacebookF color="#e8eded" size="20px" />{" "}
             </Link>
             <Link to={""} target="_blank" href="https://www.twitter.com">
