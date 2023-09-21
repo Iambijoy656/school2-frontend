@@ -1,11 +1,24 @@
 [
   {
     "websiteImage": "https://ecommerce-frontend-fahimcc.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdov60yweq%2Fimage%2Fupload%2Ff_webp%2FblackLogo_quzgb5&w=3840&q=75",
-    "awardImage1": "https://www.wellingtoninternationalschool.com/-/media/project/gems/shared/client-img-3.jpg?h=83&w=201&hash=1584E8311D259951929F8C7657526BD9",
-    "awardImage2": "https://www.wellingtoninternationalschool.com/-/media/project/gems/shared/_shared-footer-logos/cobis_accredited_member_logo_no-margin.svg?h=85&w=170&hash=6D91F407D5EBB9E02A4CDA46CA9630D0",
-    "awardImage3": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-top-right-images/cobis_new_transp.png?h=85&w=170&hash=0EAC5F4326CD9A58FD45C9F2741CE6FF",
-    "memberImage1": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-thumbnails/cobis_new.png?h=85&w=170&hash=A0ED03F3476949A30A7DDB9308F486F4",
-    "memberImage2": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_design-images/bsme-logo-footer.png?h=40&w=250&hash=B1D88CEB8BA321260538A7A58D9ECC04"
-
+    "awardImage": [
+      {
+        "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/shared/client-img-3.jpg?h=83&w=201&hash=1584E8311D259951929F8C7657526BD9"
+      },
+      {
+        "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/shared/_shared-footer-logos/cobis_accredited_member_logo_no-margin.svg?h=85&w=170&hash=6D91F407D5EBB9E02A4CDA46CA9630D0"
+      },
+      {
+        "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-top-right-images/cobis_new_transp.png?h=85&w=170&hash=0EAC5F4326CD9A58FD45C9F2741CE6FF"
+      }
+    ],
+    "memberImage": [
+      {
+        "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_page-thumbnails/cobis_new.png?h=85&w=170&hash=A0ED03F3476949A30A7DDB9308F486F4"
+      },
+      {
+        "image": "https://www.wellingtoninternationalschool.com/-/media/project/gems/wis_gems_wellington_international_school/_design-images/bsme-logo-footer.png?h=40&w=250&hash=B1D88CEB8BA321260538A7A58D9ECC04"
+      }
+    ]
   }
 ]

@@ -1,9 +1,29 @@
 [
-    {
-        "_id":1,
-        "bannerVedio":"https://player.vimeo.com/external/410154928.sd.mp4?s=c6f0fe44e096249ccc359c432aae17690d598c25&profile_id=165",
-        "title":"A FUTURE-FOCUSED LEARNING ENVIRONMENT",
-        "abbreviation":"WIS"
+  {
+    "_id": 1,
+    "image": "https://ihsan.education/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-03-at-5.37.22-PM.jpeg",
+    "title": "A FUTURE-FOCUSED LEARNING ENVIRONMENT",
+    "message": "Where personalized learning comes to you wherever you are, anytime",
+    "buttonText":"Register Now"
+  },
+  {
+    "_id": 2,
+    "image": "https://ihsan.education/wp-content/uploads/2022/05/Downloader.la-6294979b8cfb4.jpg",
+    "title": "A FUTURE-FOCUSED LEARNING ENVIRONMENT",
+    "message": "Where personalized learning comes to you wherever you are, anytime",
+    "buttonText":"Register Now"
+  },
+  {
+    "_id": 3,
+    "image": "https://ihsan.education/wp-content/uploads/2021/04/aleks-dorohovich-nJdwUHmaY8A-unsplash-1.jpg",
 
-    }
+    "title": "A FUTURE-FOCUSED LEARNING ENVIRONMENT",
+    "message": "Where personalized learning comes to you wherever you are, anytime"
+  },
+  {
+    "_id": 4,
+    "image": "https://ihsan.education/wp-content/uploads/2022/05/pexels-max-fischer-5212336-scaled.jpg",
+    "title": "A FUTURE-FOCUSED LEARNING ENVIRONMENT",
+    "message": "Where personalized learning comes to you wherever you are, anytime"
+  }
 ]
