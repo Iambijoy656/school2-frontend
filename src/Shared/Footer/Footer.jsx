@@ -45,7 +45,7 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className=" grid grid-cols-1 mx-auto gap-x-3 gap-y-8 sm:grid-cols-2 md:grid-cols-5">
+          <div className=" grid grid-cols-1 w-full  gap-x-3 gap-y-8 sm:grid-cols-2 md:grid-cols-3">
             <div className="flex flex-col space-y-4">
               <h2 className="font-medium text-primary">Get Connected</h2>
               <div className="flex flex-col  space-y-2 text-sm text-gray-400">
