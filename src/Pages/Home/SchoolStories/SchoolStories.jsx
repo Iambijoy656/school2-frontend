@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import Loading from "../../../Shared/Loading/Loading";
 import SchoolStoriesCard from "../../../Components/Card/SchoolStoriesCard";
 
+
 const SchoolStories = () => {
   const { data: schoolStoriesData = [], isLoading } = useQuery({
     queryKey: ["schoolStoriesData"],
