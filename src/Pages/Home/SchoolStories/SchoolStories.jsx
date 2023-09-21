@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+
 import Loading from "../../../Shared/Loading/Loading";
 import SchoolStoriesCard from "../../../Components/Card/schoolStoriesCard";
 
@@ -18,7 +19,7 @@ const SchoolStories = () => {
   if (isLoading && !schoolStoriesData.length) return <Loading />;
 
   const schoolStories = schoolStoriesData[0]?.allstories.slice(0, 3);
-    // console.log(schoolStories);
+  // console.log(schoolStories);
 
   return (
     <div className=" bg-white py-10">
