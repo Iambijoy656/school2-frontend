@@ -1,8 +1,12 @@
-import { BsArrowRightCircleFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "../../../Shared/Loading/Loading";
+import { useRef, useState } from "react";
+import Slider from "react-slick";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import PrimaryButton from "../../../Components/PrimaryButton/PrimaryButton";
 const Banner = () => {
+  const sliderRef = useRef();
+  const [animation, setAnimation] = useState(true);
   const { data: bannerData = [], isLoading } = useQuery({
     queryKey: ["bannerData"],
     queryFn: async () => {
@@ -15,35 +19,122 @@ const Banner = () => {
   if (isLoading && !bannerData.length) return <Loading />;
   //   if (isLoading && !bannerData.length) return <p>Loading....</p>;
 
-  //   console.log(bannerData[0]);
+  const handleSlideChange = () => {
+    setAnimation(true);
+    setTimeout(() => {
+      setAnimation(false);
+    }, 5000);
+  };
+
+  const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    autoplay: true,
+    speed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    beforeChange: handleSlideChange,
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //       infinite: true,
+    //       dots: false,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 1,
+    //       initialSlide: 2,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ],
+  };
+
+  const goNext = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const goPrev = () => {
+    sliderRef.current.slickPrev();
+  };
   return (
-    <div>
-      <div className="relative flex items-center overflow-ellipsis">
-        <video
-          className="w-full cover"
-          src={bannerData[0].bannerVedio}
-          muted
-          autoPlay={"autoplay"}
-          preload="auto"
-          loop
-        >
-          {" "}
-        </video>
-        <div className="text-xl md:text-3xl uppercase font-bold text-white absolute">
-          <h1 className="  space-x-1 space-y-1 px-10 tracking-wider leading-10 w-3/4">
-            {bannerData[0].title}
-          </h1>
-          <Link
-            to={""}
-            className="flex items-center  px-10 gap-3  mt-16 cursor-pointer"
-          >
-            <p className="text-xl uppercase text-white">
-              Why choose {bannerData[0].abbreviation}
-            </p>
-            <span>
-              <BsArrowRightCircleFill className="text-orange-300" />
-            </span>
-          </Link>
+    <div className="bg-white">
+      <div className=" pb-5">
+        <div className="relative">
+          <Slider {...settings} ref={sliderRef} className="overflow-hidden">
+            {bannerData?.map((information, i) => (
+              <div key={i} className="relative group">
+                <div className="w-full h-[600px]">
+                  <img
+                    className="w-full h-full"
+                    src={information.image}
+                    alt=""
+                  />
+                </div>
+                {/* Apply the overlay class to create the image overlay */}
+                <div className="absolute inset-0 bg-[#591b5e] opacity-50 transition-opacity group:opacity-0">
+                  {/* Overlay content goes here */}
+                </div>
+
+                <div className="flex flex-col justify-center absolute left-[10%] top-[20%]">
+                  <h1
+                    className={`${
+                      animation &&
+                      "animate__animated animate__fadeInRight animate__slow delay-15s"
+                    } text-white text-3xl w-[70%]`}
+                  >
+                    {information.title}
+                  </h1>
+                  <p
+                    className={`${
+                      animation &&
+                      "animate__animated animate__fadeInLeft animate__slow delay-15s"
+                    } text-white my-10 tracking-wide`}
+                  >
+                    {information.message}
+                  </p>
+                  <div className=" cursor-pointer">
+                    {information?.buttonText && (
+                      <PrimaryButton
+                        btnText={information?.buttonText}
+                        borderColor="#ffffff"
+                        bgColor=""
+                        iconColor="#fff"
+                        textColor="#ffffff"
+                      />
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
+          <div className="absolute bottom-32 right-24  flex  gap-5 -ml-5">
+            <button
+              onClick={() => goPrev()}
+              className="  hover:border-red-800 hover:text-primary  p-2   transition ease-in-out delay-150 bg-white border-2 border-gray-500 hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
+            >
+              <SlArrowLeft />
+            </button>
+            <button
+              onClick={() => goNext()}
+              className="   hover:border-red-800 p-2 hover:text-primary   transition ease-in-out delay-150 bg-white border-2  border-gray-500 hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
+            >
+              <SlArrowRight />
+            </button>
+          </div>
         </div>
       </div>
     </div>

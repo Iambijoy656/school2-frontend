@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "../../../Shared/Loading/Loading";
 import { useRef } from "react";
-import SchoolLevelCard from "../../../Components/Card/schoolLevelCard";
+import SchoolLevelCard from "../../../Components/Card/SchoolLevelCard";
 const SchoolLevel = () => {
   const sliderRef = useRef();
   const { data: schoolLevelData = [], isLoading } = useQuery({
