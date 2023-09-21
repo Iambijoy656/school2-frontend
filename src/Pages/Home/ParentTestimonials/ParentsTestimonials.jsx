@@ -13,7 +13,7 @@ const ParentsTestimonials = () => {
         },
       });
     
-    //   console.log(parentTestimonialData[0]);
+      console.log(parentTestimonialData[0]);
     
     
       if (isLoading && !parentTestimonialData.length) return <Loading />;
@@ -23,11 +23,11 @@ const ParentsTestimonials = () => {
     <section className="p-4 lg:p-16 bg-[#faf9f7]">
       <div className="container mx-auto space-y-12">
         <div className="flex flex-col overflow-hidden  lg:flex-row-reverse">
-          <div className="w-1/2">
+          <div className="lg:w-1/2 ">
             <video width="750" height="500" controls>
               <source
-                src={parentTestimonialData[0].vedioLink}
-                type="video/mp4"
+                src={parentTestimonialData[0]?.VedioLink}
+                // type="video/mp4"
               />
             </video>
           </div>

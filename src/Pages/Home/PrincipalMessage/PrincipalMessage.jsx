@@ -16,13 +16,13 @@ const PrincipalMessage = () => {
   return (
     <section className=" p-4 lg:p-8 bg-[#f4f7f7] text-gray-100 pt-10">
       <div className=" mx-auto space-y-12">
-        <div className="container flex flex-col overflow-hidden  lg:flex-row-reverse p-6">
+        <div className="container  flex flex-col overflow-hidden  lg:flex-row-reverse p-6">
           <img
             src={principalMessageData[0].image}
             alt=""
             // height={482}
             // width={482}
-            className=" h-[350px] w-[482px] bg-gray-500 aspect-video"
+            className=" lg:h-[350px] lg:w-[482px] bg-gray-500 aspect-video"
           />
           <div className="flex flex-col justify-center flex-1 p-6 ">
             <span className=" uppercase text-[#598db7] text-md">
