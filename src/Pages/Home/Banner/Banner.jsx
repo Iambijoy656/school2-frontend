@@ -31,7 +31,7 @@ const Banner = () => {
     fade: true,
     infinite: true,
     autoplay: true,
-    speed: 4000,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 5000,
@@ -129,13 +129,13 @@ const Banner = () => {
           <div className="absolute bottom-32 right-24  flex  gap-5 -ml-5">
             <button
               onClick={() => goPrev()}
-              className="  hover:border-red-800 hover:text-primary  p-3   transition ease-in-out delay-150 text-white border-2  border-white hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
+              className="  hover:border-red-800 hover:text-white  p-3   transition ease-in-out delay-150 text-white border-2  border-white hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
             >
               <SlArrowLeft />
             </button>
             <button
               onClick={() => goNext()}
-              className="   hover:border-red-800 p-3 hover:text-primary   transition ease-in-out delay-150 text-white border-2  border-white hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
+              className="   hover:border-red-800 p-3 hover:text-white   transition ease-in-out delay-150 text-white border-2  border-white hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
             >
               <SlArrowRight />
             </button>
