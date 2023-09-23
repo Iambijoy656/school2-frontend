@@ -21,7 +21,7 @@ const SchoolInformation = () => {
   if (isLoading && !SchoolInformationData.length) return <Loading />;
 
   const settings = {
-    dots: false,
+    dots: true,
     arrows: true,
     infinite: true,
     speed: 500,
@@ -48,6 +48,7 @@ const SchoolInformation = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
+          dots: true,
         },
       },
       {
@@ -55,6 +56,7 @@ const SchoolInformation = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         },
       },
     ],
