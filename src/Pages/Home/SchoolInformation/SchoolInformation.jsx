@@ -79,13 +79,13 @@ const SchoolInformation = () => {
         </Slider>
         <button
           onClick={() => goNext()}
-          className="absolute -right-10 md:-right-20 top-1/2 hover:bg-warning p-2   transition ease-in-out delay-150 bg-white border-2  border-gray-500 hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
+          className="absolute hidden md:block -right-10 md:-right-20 top-1/2 hover:bg-warning p-2   transition ease-in-out delay-150 bg-white border-2  border-gray-500 hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
         >
           <SlArrowRight />
         </button>
         <button
           onClick={() => goPrev()}
-          className="absolute -left-10  md:-left-20 top-1/2 hover:bg-warning p-2   transition ease-in-out delay-150 bg-white border-2 border-gray-500 hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
+          className="absolute hidden md:block -left-10  md:-left-20 top-1/2 hover:bg-warning p-2   transition ease-in-out delay-150 bg-white border-2 border-gray-500 hover:-translate-y-1 hover:scale-110  rounded-full duration-300"
         >
           <SlArrowLeft />
         </button>

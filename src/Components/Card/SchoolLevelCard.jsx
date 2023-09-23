@@ -8,9 +8,9 @@ const SchoolLevelCard = ({ information }) => {
       <div className="relative">
         {/* Background color with opacity */}
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50">
-          <div className="flex flex-col justify-center items-start mt-10 text-white absolute top-1/2 left-[30%] transform -translate-y-1/2 w-full">
-            <h2 className="text-4xl font-bold mb-10">{information.title}</h2>
-            <p className=" w-1/2  my-5 text-sm">
+          <div className="flex flex-col justify-center items-start mt-10 text-white absolute top-1/2 left-[5%] md:left-[30%] transform -translate-y-1/2 w-full">
+            <h2 className="text-3xl md:text-4xl font-bold mb-10">{information.title}</h2>
+            <p className=" w-[80%] md:w-1/2  my-5 text-sm">
             {information.text}
             </p>
             <PrimaryButton

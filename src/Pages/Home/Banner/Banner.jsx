@@ -78,11 +78,11 @@ const Banner = () => {
           <Slider {...settings} ref={sliderRef} className="overflow-hidden">
             {bannerData?.map((information, i) => (
               <div key={i} className="relative group">
-                <div className="w-full h-[630px]">
+                <div className="w-full max-h-[800px] mx-auto overflow-hidden">
                   <img
                     className={`${
                       animation &&
-                      "transition  duration-[6000ms] ease-in scale-125"
+                      "transition  duration-[6000ms] ease-in scale-125 "
                     } w-full h-full`}
                     // className="w-full h-full "
                     src={information.image}
