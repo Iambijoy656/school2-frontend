@@ -59,13 +59,13 @@ const ResultsSection = () => {
   if (isLoading && !resultsSectionData.length) return <Loading />;
 
   return (
-    <div className="py-28 text-center">
+    <div className="py-10 md:py-28 text-center">
       {
         <div className="">
-          <h1 className="text-4xl font-bold text-primary mb-5">
+          <h1 className="text-2xl md:text-4xl font-bold text-primary mb-5">
             {resultsSectionData[0]?.title}
           </h1>
-          <h3 className="text-2xl font-bold text-primary my-7 w-full lg:w-[70%] mx-auto">
+          <h3 className=" text-xl md:text-2xl font-bold text-primary my-7 w-full lg:w-[70%] mx-auto">
             {resultsSectionData[0]?.subtitle}
           </h3>
         </div>

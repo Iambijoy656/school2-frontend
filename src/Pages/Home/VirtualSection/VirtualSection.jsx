@@ -19,7 +19,7 @@ const VirtualSection = () => {
         <div className="bg-[#8c1d58] py-16 ">
             <div>
                 <h1 className="text-center text-white text-4xl font-bold tracking-wide mb-4">{virtualSectionData[0].title}</h1>
-                <p className="text-center w-[70%] mx-auto text-white tracking-wider mt-4">{virtualSectionData[0].message}</p>
+                <p className="text-center  text-sm  md:text-lg w-[70%] mx-auto text-white tracking-wider mt-4">{virtualSectionData[0].message}</p>
             </div>
           <div className="flex justify-center items-center mt-10">
           <PrimaryButton

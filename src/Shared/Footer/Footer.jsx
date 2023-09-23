@@ -27,8 +27,8 @@ const Footer = () => {
       <footer className="p-6 bg-[#e8eded] ">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 justify-center mb-10 mx-auto">
-            <div>
-              <img src={footerData[0].websiteImage} alt="" />
+            <div className="w-44 h-28">
+              <img className="w-full h-full" src={footerData[0].websiteImage} alt="" />
             </div>
             {footerData[0].awardImage.map((data, i) => (
               <div key={i} className="w-44 h-28">
@@ -37,7 +37,7 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 justify-center mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 justify-center items-center mb-10">
             {footerData[0].memberImage.map((data, i) => (
               <div key={i} className="w-44 h-24">
                 <img className="w-full h-full" src={data.image} alt="" />
@@ -190,7 +190,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className=" bg-gray-200 text-sm shadow-sm ">
-        <div className="flex  items-center justify-between p-8 container">
+        <div className="flex flex-col md:flex-row  items-center justify-between p-4  md:p-8 container">
           <div className="mb-5 lg:mb-0">
             <p className="">
               © 2023{" "}
