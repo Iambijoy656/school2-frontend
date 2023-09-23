@@ -5,9 +5,12 @@ import HoverAcademics from "../../Components/HoverAcademics/HoverAcademics";
 import HoverAdmission from "../../Components/HoverAdmission/HoverAdmission";
 import HoverMedia from "../../Components/HoverMedia/HoverMedia";
 import HoverFacilities from "../../Components/HoverFacilities/HoverFacilities";
+import { BsPlus } from "react-icons/bs";
+import { BiMinus } from "react-icons/bi";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isShowAbout, setIsShowAbout] = useState(false);
   const [isShowAcademics, setIsShowAcademics] = useState(false);
   const [isShowAdmission, setIsShowAdmission] = useState(false);
@@ -167,57 +170,89 @@ function Navbar() {
           <li>
             <Link
               to="#"
-              className="block px-4 py-2 text-[#fff]"
-              onClick={toggleNavbar}
+              className="block px-4 py-2 text-[#fff] hover:bg-orange-400"
             >
-              Home
+              <div className="flex justify-between items-center">
+                <p>Home</p>
+              </div>
             </Link>
           </li>
           <li>
             <Link
               to="#"
-              className="block px-4 py-2 text-[#fff]"
-              onClick={toggleNavbar}
+              className="block px-4 py-2 text-[#fff] hover:bg-orange-400"
             >
-              About Us
+              <div className="flex justify-between items-center">
+                <p>About Us</p>
+                <span>
+                  <BsPlus size={24} />
+                </span>
+              </div>
             </Link>
           </li>
           <li>
             <Link
               to="#"
-              className="block px-4 py-2 text-[#fff]"
-              onClick={toggleNavbar}
+              className="block px-4 py-2 text-[#fff] hover:bg-orange-400"
             >
-              Academics
+              <div className="flex justify-between items-center">
+                <p>Academics</p>
+                <span>
+                  <BsPlus size={24} />
+                </span>
+              </div>
             </Link>
           </li>
           <li>
             <Link
               to="#"
-              className="block px-4 py-2 text-[#fff]"
-              onClick={toggleNavbar}
+              className="block px-4 py-2 text-[#fff] hover:bg-orange-400"
             >
-              Admissions
+              <div className="flex justify-between items-center">
+                <p>Admission</p>
+                <span>
+                  <BsPlus size={24} />
+                </span>
+              </div>
             </Link>
-          </li>{" "}
+          </li>
           <li>
             <Link
               to="#"
-              className="block px-4 py-2 text-[#fff]"
-              onClick={toggleNavbar}
+              className="block px-4 py-2 text-[#fff] hover:bg-orange-400"
             >
-              Achivements
+              <div className="flex justify-between items-center">
+                <p>Achivements</p>
+                <span>
+                  <BsPlus size={24} />
+                </span>
+              </div>
             </Link>
-          </li>{" "}
+          </li>
           <li>
             <Link
               to="#"
-              className="block px-4 py-2 text-[#fff]"
-              onClick={toggleNavbar}
+              className="block px-4 py-2 text-[#fff] hover:bg-orange-400"
             >
-              Facilities
+              <div
+                onClick={() => setIsShowFacilities(true)}
+                className="flex justify-between items-center relative"
+              >
+                <p>Facilities</p>
+                <span onClick={()=>setIsMenuOpen(!isMenuOpen)} >
+                  {/* <BsPlus size={24} /> */}
+                  {
+                    !isMenuOpen ? <BsPlus size={24} /> :<BiMinus size={24} />
+                  }
+                </span>
+                {isShowFacilities &&(
+                  <div className="absolute z-50 top-8 left-0 right-0">
+                    <HoverFacilities />
+                  </div>
+                )}
+              </div>
             </Link>
-          </li>{" "}
+          </li>
           <li>
             <Link
               to="#"
