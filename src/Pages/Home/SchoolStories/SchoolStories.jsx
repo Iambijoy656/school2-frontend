@@ -23,11 +23,11 @@ const SchoolStories = () => {
   // console.log(schoolStories);
 
   return (
-    <div className=" bg-white py-10">
+    <div className=" bg-white py-10 container mx-auto flex flex-col justify-center items-center">
       <h1 className="text-center my-5 mb-10 text-3xl font-bold text-primary">
         {schoolStoriesData[0]?.sectionTitle}
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center container mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
         {schoolStories?.map((story, i) => (
           <SchoolStoriesCard key={i} story={story} />
         ))}
