@@ -32,7 +32,7 @@ function Navbar() {
   const menu = (
     <>
       <li className="font-bold text-md tracking-wide p-5 ">
-        <Link to="#" className="text-[#005e9a]">
+        <Link to="#" className="text-[#ffffff]">
           Home
         </Link>
       </li>
@@ -42,7 +42,7 @@ function Navbar() {
         onMouseLeave={() => setIsShowAbout(false)}
         className="font-bold text-md tracking-wide p-5 relative"
       >
-        <Link to="#" className="text-[#005e9a]">
+        <Link to="#" className="text-[#ffffff]">
           About Us
         </Link>
 
@@ -58,7 +58,7 @@ function Navbar() {
         onMouseLeave={() => setIsShowAcademics(false)}
         className="font-bold text-md tracking-wide p-5 relative"
       >
-        <Link to="#" className="text-[#005e9a]">
+        <Link to="#" className="text-[#ffffff]">
           Academics
         </Link>
 
@@ -74,7 +74,7 @@ function Navbar() {
         onMouseLeave={() => setIsShowAdmission(false)}
         className="font-bold text-md tracking-wide p-5  relative "
       >
-        <Link to="#" className="text-[#005e9a]">
+        <Link to="#" className="text-[#ffffff]">
           Admissions
         </Link>
 
@@ -86,7 +86,7 @@ function Navbar() {
       </li>
       <span className="text-gray-300 py-5">|</span>
       <li className="font-bold text-md tracking-wide p-5 ">
-        <Link to="#" className="text-[#005e9a]">
+        <Link to="#" className="text-[#ffffff]">
           Achivements
         </Link>
       </li>
@@ -96,7 +96,7 @@ function Navbar() {
         onMouseLeave={() => setIsShowMedia(false)}
         className="font-bold text-md tracking-wide p-5  relative "
       >
-        <Link to="#" className="text-[#005e9a]">
+        <Link to="#" className="text-[#ffffff]">
           Media & News
         </Link>
 
@@ -107,11 +107,12 @@ function Navbar() {
         )}
       </li>
       <span className="text-gray-300 py-5">|</span>
-      <li 
+      <li
         onMouseEnter={() => setIsShowFacilities(true)}
         onMouseLeave={() => setIsShowFacilities(false)}
-      className="font-bold text-md tracking-wide p-5 relative ">
-        <Link to="#" className="text-[#005e9a]">
+        className="font-bold text-md tracking-wide p-5 relative "
+      >
+        <Link to="#" className="text-[#ffffff]">
           Facilities
         </Link>
         {isShowFacilities && (
@@ -122,7 +123,7 @@ function Navbar() {
       </li>
       <span className="text-gray-300 py-5">|</span>
       <li className="font-bold text-md tracking-wide p-5 ">
-        <Link to="#" className="text-[#005e9a]">
+        <Link to="#" className="text-[#ffffff]">
           Contacts
         </Link>
       </li>
@@ -130,21 +131,21 @@ function Navbar() {
   );
 
   return (
-    <nav className="bg-gray-100  shadow-sm p-2 lg:p-0">
+    <nav className="bg-[#460084]  shadow-sm p-2 lg:p-0">
       <div className="px-10 mx-auto flex justify-between items-center">
         {/* <Link to="#" className="text-white text-2xl font-bold">
           Logo
         </Link> */}
         <img
           className="h-10"
-          src="https://ecommerce-frontend-fahimcc.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdov60yweq%2Fimage%2Fupload%2Ff_webp%2FblackLogo_quzgb5&w=3840&q=75"
+          src="https://ecommerce-frontend-fahimcc.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdov60yweq%2Fimage%2Fupload%2Ff_webp%2Fwhitelogo_cavpsp&w=1200&q=75"
           alt=""
         />
 
         {/* Mobile Menu Button */}
         <button
           onClick={toggleNavbar}
-          className="text-[#005e9a] block lg:hidden"
+          className="text-[#ffffff] block lg:hidden"
         >
           {isOpen ? (
             <svg
@@ -183,8 +184,8 @@ function Navbar() {
         <ul className="hidden lg:flex ">{menu}</ul>
       </div>
 
-     {/* Mobile Menu (Hidden by default) */}
-     <div className={`${isOpen ? "block" : "hidden"} lg:hidden`}>
+      {/* Mobile Menu (Hidden by default) */}
+      <div className={`${isOpen ? "block" : "hidden"} lg:hidden`}>
         <ul className="mt-2 space-y-2">
           <li>
             <Link
