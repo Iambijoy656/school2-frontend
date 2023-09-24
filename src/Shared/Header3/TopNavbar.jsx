@@ -1,17 +1,36 @@
 // import PrimaryButton from "../../Components/PrimaryButton/PrimaryButton";
 
+import { useEffect, useState } from "react";
+
 const TopNavbar = () => {
+  const [isScroll, setIsScroll] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="bg-[#fff] py-2 ">
-      <div className="container  mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className=" ">
+    <div className={`${isScroll ? "hidden" : "bg-[#fff] py-2"}`} >
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div className="  ">
           <img
-            className="h-20"
+            className="h-14 md:h-20"
             src="https://www.ambassadorschool.com/upload/desc/news_93.png"
             alt=""
           />
         </div>
-        <div className="flex flex-col  justify-start">
+       <div>
+       <div className="flex flex-col  justify-start ">
           <div className="flex flex-col  text-gray-600">
             <p className="text-sm">
               Tel : <span>{"+971- 04-398-3535"}</span>
@@ -42,6 +61,7 @@ const TopNavbar = () => {
             </div>
           </div>
         </div>
+       </div>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import TopNavbar from "./TopNavbar";
 
 const Header3 = () => {
   return (
-    <div className="">
+    <div className=" sticky w-full top-0 z-50">
       <TopNavbar />
       <Navbar />
     </div>
